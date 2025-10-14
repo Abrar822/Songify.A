@@ -40,7 +40,8 @@ function generateCards(song) {
     playbar.style.display = "flex";
     playBtn.innerHTML = '<i class="fa-solid fa-pause">';
     if (myAudio) myAudio.pause();
-    myAudio = new Audio(`Songs/${song["file"]}`);
+    // myAudio = new Audio(`Songs/${song["file"]}`);
+    myAudio = new Audio(`${song["file"]}`);
     myAudio.play();
     // displaying the current song
     showCurrentSong(song);
