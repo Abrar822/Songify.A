@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Songify.A | Play Your Favorite Music Anytime" />
+    <meta
+      name="description"
+      content="Songify.A is a sleek, Spotify-inspired music player web app built using HTML, CSS, and JavaScript. Enjoy smooth playback, playlists, and a modern dark UI."
+    />
+    <title>Songify | My Library</title>
+    <link rel="icon" type="image/png" href="l2.png" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="playlistSongs.css" />
+    <link rel="stylesheet" href="songSelection.css" />
+    <link rel="stylesheet" href="songSelection.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <style>
+      .content h2 {
+        color: var(--pure-white);
+        display: inline-block;
+      }
+      .loop.inloop {
+        color: var(--pure-white);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- loader with cover -->
+    <div class="loader-container" id="songifyLoader">
+      <div class="equalizer">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <div class="loader-text">Loading your vibes...</div>
+    </div>
+    <div class="mainContainer">
+      <!-- Container containing the left and the right part -->
+      <div class="container">
+        <!-- For left part -->
+        <div class="left">
+          <div class="leftCard1">
+            <div class="logo">
+              <i class="fa-brands fa-spotify"></i> <span>Songify</span>
+            </div>
+            <div class="mobileRecBtns">
+              <button class="signup">Sign up</button>
+              <button class="login">Log in</button>
+            </div>
+            <div class="crossBtn"><i class="fa-solid fa-xmark"></i></div>
+            <ul class="menus">
+              <li class="home">
+                <i class="fa-solid fa-house"></i> <span>Home</span>
+              </li>
+              <li class="goToLibrary">
+                <i class="fa-solid fa-music"></i> <span>Library</span>
+              </li>
+            </ul>
+          </div>
+          <div class="leftCard2">
+            <div class="library">
+              <div class="libraryBtn">
+                <i class="fa-solid fa-music"></i> <span>Your Library</span>
+              </div>
+              <div class="actionBtns">
+                <button class="addBtn"><i class="fa-solid fa-plus"></i></button>
+              </div>
+            </div>
+            <div class="songs"></div>
+          </div>
+        </div>
+
+        <!-- right part -->
+        <div class="right">
+          <div class="navbarContainer">
+            <nav class="navbar">
+              <div class="menuBtn">
+                <i class="fa-solid fa-bars menuBtn"></i>
+              </div>
+              <button class="signup">Sign up</button>
+              <button class="login">Log in</button>
+              <div class="logo">
+                <i class="fa-brands fa-spotify"></i> <span>Songify</span>
+              </div>
+            </nav>
+          </div>
+          <div class="content">
+            <h2>Library</h2>
+            <div class="librarySongs"></div>
+            <div class="songCards"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- For playbar, time, seekbar -->
+      <div class="playbar">
+        <div class="seekbar">
+          <div class="circle"></div>
+        </div>
+        <div class="songName"></div>
+        <div class="btns">
+          <button class="backBtn"><i class="fa-solid fa-backward"></i></button>
+          <button class="playBtn"></button>
+          <button class="forwardBtn">
+            <i class="fa-solid fa-forward"></i>
+          </button>
+          <button class="loop"><i class="fa-solid fa-repeat"></i></button>
+        </div>
+        <div class="songTime"></div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-left">
+          <span>&copy; 2025 Songify</span>
+        </div>
+        <div class="footer-right">
+          <span>Made with ❤️ by Abrar</span>
+        </div>
+      </footer>
+    </div>
+    <script src="songs.js"></script>
+    <script src="index.js"></script>
+    <script src="playlistSongs.js"></script>
+    <script src="songSelection.js"></script>
+    <script src="library.js"></script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+.msg {
+    position: absolute;
+    z-index: 11;
+    color: var(--pure-white);
+    background-color: black;
+    border: 2px solid var(--pure-white);
+    font-size: 1rem;
+    padding: 10px;
+    top: 0;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+.content {
+  position: relative;
+}
+.songCards .card:hover {
+  transform: scale(1);
+  border-color: var(--logo-color) !important;
+}
+.add {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 10px;
+  margin-left: 15px;
+  height: 35px;
+  border-radius: 10px;
+  background-color: var(--logo-color);
+  color: var(--pure-white);
+  border: 2px solid var(--logo-color);
+  padding: 5px;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.add:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 680px) {
+  .add {
+    font-size: 1rem;
+    position: fixed;
+    top: 70px;
+    right: 10px;
+    z-index: 10;
+  }
+  .add:hover {
+    transform: scale(1);
+  }
+  .add:active {
+    transform: scale(1.1);
+  }
+  .addToLibrary {
+    width: 25px;
+    height: 25px;
+  }
+}

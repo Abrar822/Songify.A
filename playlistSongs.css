@@ -1,0 +1,74 @@
+.loop.inloop {
+  color: var(--pure-white);
+}
+.content .songCards,
+.content .card {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.content h2 {
+  display: none;
+}
+.songCards .card {
+  display: none;
+  height: 300px;
+  width: 220px;
+  background-color: rgb(22, 22, 22);
+  border: 2px solid var(--pure-white);
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  padding: 5px;
+  position: relative;
+}
+.librarySongs .card {
+  display: flex;
+  height: 300px;
+  width: 220px;
+  background-color: rgb(22, 22, 22);
+  border: 2px solid var(--pure-white);
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  padding: 5px;
+  position: relative;
+}
+.songCards .card:hover,
+.librarySongs .card:hover {
+  transform: scale(1.05);
+  border-color: var(--logo-color) !important;
+}
+.songCards .card span,
+.librarySongs .card span {
+  font-size: 0.9rem;
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+}
+.songCards .card img,
+.librarySongs .card img {
+  width: 100%;
+  height: auto;
+}
+.addToLibrary {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  border-radius: 50%;
+  accent-color: var(--logo-color);
+  border: 2px solid var(--pure-white);
+  background-color: white;
+  cursor: pointer;
+}
